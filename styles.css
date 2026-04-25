@@ -1,0 +1,586 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    background-color:green;
+    padding: 16px 40px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav ul li a{
+color: white;
+text-decoration: none;
+font-size: 1rem;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.hero{
+    background-image: url("https://images.unsplash.com/photo-1579751626657-72bc17010498?w=1200");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100px;
+}
+.hero h2{
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0, 0.7);
+}
+
+.hero p{
+    font-size: 1,2rem;
+    margin-bottom: 24px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+.title{
+    margin-bottom: 0;
+    font-size: 20px
+}
+p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.hero button{
+    color: white;
+    background-color: green;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-size: 1rem;
+    border:none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.hero button:hover{
+    color: white;
+    background-color: darkgreen;
+}
+
+/*Why choose Us Section*/
+.why-container{
+    background-color: #f9f5f0;
+    padding: 60px 40px;
+    text-align: center;
+}
+.why-header{
+    font-size: 2rem;
+    color: green;
+    margin-bottom: 40px;
+}
+.why-sub-container{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+.why-card{
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0 4px 15px rgb(0, 0, 0, 0.8);
+
+}
+.why-card span{
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 16px;
+}
+.why-card p{
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+/* Our Favourite Section*/
+.our-favourites{
+    padding: 60px 40px;
+    text-align: center;
+    background-color: white;
+}
+.cards-container-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.card{
+background-color: white;
+border-radius: 12px;
+box-shadow: 0 4px  15px rgb(0, 0, 0, 0.1);
+overflow: hidden;
+text-align: center;
+}
+.card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.card h3{
+    margin: 10px 0 6px;
+    color: #333;
+}
+.explation{
+    font-size: 0.85rem;
+    color: #888;
+    margin: 4px 0;
+}
+.red{
+    color: crimson;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.our-favourites h3{
+    font-size: 2rem;
+    color: green;
+    margin-top: 30px;
+
+}
+#see-more{
+    display: block;
+    margin: 30px auto 0;
+    background-color: green;
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#see-more:hover{
+background-color: darkgreen;
+}
+.our-favourites a{
+    text-decoration: none;
+}
+
+/*Reviews Section*/
+.customer-review{
+    background-color: #f9f5f0;
+    padding: 60px 40px;
+    text-align: center;
+}
+.customer-review h2{
+    font-size: 2rem;
+    color: green;
+    margin-bottom: 40px;
+}
+.customer-review > div{
+display: inline-block;
+background-color: white;
+border-radius: 12px;
+padding: 24px;
+width: 260px;
+box-shadow: 0 4px 15px rgb(0, 0, 0, 0.8);
+margin: 10px;
+vertical-align: top;
+}
+.customer-review span{
+    display: block;
+    margin-bottom: 10px;
+}
+.customer-review p{
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+.customer-review > div span:last-child{
+font-weight: bold;
+color: green;
+}
+
+/* Opening Hours&Location*/
+.hours-location{
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 60px 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.hours-location h3{
+font-size: 1.5rem;
+margin-bottom: 16px;
+margin-top: 10px;
+
+}
+.hours-location p{
+    line-height: 2;
+    font-size: 2rem;
+}
+.hours-location span{
+font-size: 2rem;
+}
+.hours-location a{
+    color: white;
+    text-decoration: none;
+}
+.hours-location a:hover{
+    text-decoration: underline;
+}
+/*Menu*/
+.menu-hero{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 60px 20x;
+}
+.menu-hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+
+}
+.menu-hero p{
+    font-size: 1.1rem;
+}
+.menu{
+    padding: 40px;
+
+}
+.menu-header{
+    text-align: center;
+    font-size: 2rem;
+    color: green;
+    margin-bottom: 30px;
+}
+.food-header{
+    font-size: 1.5rem;
+    color: green;
+    margin-bottom: 20px;
+    text-align: center;
+    grid-column: 1/-1;
+}
+.menu>div:nth-child(odd){
+    background-color: #f9f5f0;
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 30px;
+
+}
+.menu > div:nth-child(even){
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+
+}
+.cards-container-2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:24px;
+max-width: 1100;
+margin: 0 auto;
+
+}
+
+/*About Us Section*/
+.about-hero {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 24px;
+     border-top: 10px solid white;
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 1.1rem;
+}
+
+.our-story {
+    display: flex;
+    gap: 40px;
+    padding: 60px 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #f9f5f0;
+}
+
+.our-story h3 {
+    font-size: 1.8rem;
+    color: green;
+    margin-bottom: 16px;
+}
+
+.our-story img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.our-story p {
+    flex: 1;
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.our-values {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: white;
+}
+
+.our-values h3 {
+    font-size: 2rem;
+    color: green;
+    margin-bottom: 40px;
+}
+
+.value-card {
+    display: inline-block;
+    background-color: #f9f5f0;
+    border-radius: 12px;
+    padding: 30px;
+    width: 220px;
+    margin: 10px;
+    vertical-align: top;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.value-card .icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.value-card h4 {
+    color: green;
+    margin-bottom: 8px;
+}
+
+.value-card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.our-team {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #f9f5f0;
+}
+
+.our-team h3 {
+    font-size: 2rem;
+    color: green;
+    margin-bottom: 40px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.team-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid green;
+    margin-bottom: 12px;
+}
+
+.team-card span {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.team-card span:first-of-type {
+    font-weight: bold;
+    color: #333;
+}
+
+.team-card span:last-of-type {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Contact Section*/
+.contact-hero {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 10px solid white;
+}
+
+.contact-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-hero p {
+    font-size: 1.1rem;
+}
+
+.contact-body {
+    display: flex;
+    gap: 40px;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    color: green;
+    margin-bottom: 24px;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.contact-info span {
+    font-size: 1.3rem;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: green;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    color: green;
+    margin-bottom: 24px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: green;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: green;
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: darkgreen;
+}
+
+.contact-body + section {
+    padding: 0 40px 60px;
+}
+
+.contact-body + section iframe {
+    border-radius: 12px;
+}
+
+/*Footr section*/
+footer{
+    text-align: center;
+    background-color: darkgreen;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    border-top: 3px solid white;
+    margin-top: 10px;
+}
+
+footer span {
+    color: #f0c96e;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-left: 2px solid white;
+    padding-left: 10px;
+    margin-left: 10px;
+}
