@@ -584,3 +584,270 @@ footer span {
     padding-left: 10px;
     margin-left: 10px;
 }
+
+@media (max-width: 768px) {
+ 
+  /* --- NAV --- */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+    gap: 10px;
+  }
+ 
+  nav ul {
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+ 
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+ 
+  /* --- HERO (index) --- */
+  .hero {
+    height: 340px;
+    padding: 0 20px;
+    text-align: center;
+  }
+ 
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+ 
+  .hero p {
+    font-size: 1rem;
+  }
+ 
+  /* --- WHY CHOOSE US --- */
+  .why-container {
+    padding: 40px 16px;
+  }
+ 
+  .why-sub-container {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .why-card {
+    width: 90%;
+    max-width: 340px;
+  }
+ 
+  /* --- OUR FAVOURITES (index) --- */
+  .our-favourites {
+    padding: 40px 16px;
+  }
+ 
+  .cards-container-1 {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 10px 0;
+  }
+ 
+  /* --- CUSTOMER REVIEWS --- */
+  .customer-review {
+    padding: 40px 16px;
+  }
+ 
+  .customer-review > div {
+    width: 90%;
+    max-width: 340px;
+    display: block;
+  }
+ 
+  /* --- HOURS & LOCATION --- */
+  .hours-location {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+ 
+  .hours-location p,
+  .hours-location span {
+    font-size: 1.1rem;
+  }
+ 
+  /* ============================================
+     MENU PAGE — Mobile card redesign
+     Each food section becomes a horizontal
+     scroll row, cards are taller and cleaner
+     ============================================ */
+ 
+  .menu {
+    padding: 20px 0;
+  }
+ 
+  .menu-header {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+ 
+  /* Remove the section background alternation on mobile */
+  .menu > div:nth-child(odd),
+  .menu > div:nth-child(even) {
+    padding: 20px 0;
+    margin: 0 0 12px 0;
+    border-radius: 0;
+  }
+ 
+  /* Cards grid → horizontal scrollable row */
+  .cards-container-2 {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 14px;
+    padding: 8px 16px 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* Hide scrollbar but keep scrolling */
+    scrollbar-width: none;
+  }
+ 
+  .cards-container-2::-webkit-scrollbar {
+    display: none;
+  }
+ 
+  /* Section header stays full width above the row */
+  .food-header {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0 16px;
+    margin-bottom: 6px;
+    text-align: left;
+  }
+ 
+  /* Each card: fixed width so they don't collapse */
+  .cards-container-2 .card {
+    min-width: 160px;
+    max-width: 160px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    background-color: #1a1a1a;
+    color: white;
+    overflow: hidden;
+    text-align: left;
+  }
+ 
+  .cards-container-2 .card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 14px 14px 0 0;
+  }
+ 
+  .cards-container-2 .card .explanation {
+    font-size: 0.78rem;
+    color: #ccc;
+    margin: 3px 10px;
+    line-height: 1.4;
+  }
+ 
+  /* Item name — make it stand out */
+  .cards-container-2 .card .explanation:first-of-type {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #90ee90; /* light green */
+    margin-top: 8px;
+  }
+ 
+  /* Price */
+  .cards-container-2 .card .red {
+    color: #ff6b6b;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin: 4px 10px 10px;
+  }
+ 
+  /* --- ABOUT PAGE --- */
+  .about-hero {
+    padding: 30px 16px;
+    margin-top: 0;
+  }
+ 
+  .our-story {
+    padding: 30px 16px;
+    flex-direction: column;
+  }
+ 
+  .our-story img {
+    width: 100%;
+    height: 220px;
+  }
+ 
+  .our-story p {
+    font-size: 1rem;
+  }
+ 
+  .our-values {
+    padding: 30px 16px;
+  }
+ 
+  .value-card {
+    width: 85%;
+    max-width: 300px;
+    margin: 8px auto;
+    display: block;
+  }
+ 
+  .our-team {
+    padding: 30px 16px;
+  }
+ 
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  /* --- CONTACT PAGE --- */
+  .contact-hero {
+    padding: 30px 16px;
+  }
+ 
+  .contact-body {
+    flex-direction: column;
+    padding: 30px 16px;
+    gap: 24px;
+  }
+ 
+  .contact-info,
+  .contact-form {
+    max-width: 100%;
+    width: 100%;
+  }
+ 
+  .contact-body + section {
+    padding: 0 16px 40px;
+  }
+ 
+  /* --- FOOTER --- */
+  footer {
+    padding: 16px 12px;
+    font-size: 0.8rem;
+  }
+ 
+  footer span {
+    display: block;
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 6px;
+  }
+ 
+  /* --- MENU HERO --- */
+  .menu-hero {
+    padding: 40px 20px;
+  }
+ 
+  .menu-hero h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+
