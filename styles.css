@@ -669,12 +669,6 @@ footer span {
     font-size: 1.1rem;
   }
  
-  /* ============================================
-     MENU PAGE — Mobile card redesign
-     Each food section becomes a horizontal
-     scroll row, cards are taller and cleaner
-     ============================================ */
- 
   .menu {
     padding: 20px 0;
   }
@@ -684,7 +678,6 @@ footer span {
     margin-bottom: 10px;
   }
  
-  /* Remove the section background alternation on mobile */
   .menu > div:nth-child(odd),
   .menu > div:nth-child(even) {
     padding: 20px 0;
@@ -692,7 +685,7 @@ footer span {
     border-radius: 0;
   }
  
-  /* Cards grid → horizontal scrollable row */
+  
   .cards-container-2 {
     display: flex;
     flex-direction: row;
@@ -701,7 +694,6 @@ footer span {
     padding: 8px 16px 16px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    /* Hide scrollbar but keep scrolling */
     scrollbar-width: none;
   }
  
@@ -709,16 +701,14 @@ footer span {
     display: none;
   }
  
-  /* Section header stays full width above the row */
   .food-header {
     width: 100%;
     font-size: 1.3rem;
     padding: 0 16px;
     margin-bottom: 6px;
-    text-align: left;
+    text-align: center;
   }
  
-  /* Each card: fixed width so they don't collapse */
   .cards-container-2 .card {
     min-width: 160px;
     max-width: 160px;
@@ -746,7 +736,6 @@ footer span {
     line-height: 1.4;
   }
  
-  /* Item name — make it stand out */
   .cards-container-2 .card .explanation:first-of-type {
     font-weight: bold;
     font-size: 0.9rem;
